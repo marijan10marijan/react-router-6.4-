@@ -8,7 +8,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 
 
 ### After creating routes, we need to place the router variable inside the return statement of our components using Router Provider.
-<RouterProvider router={router} />
+'<RouterProvider router={router} />'
     
 
 
