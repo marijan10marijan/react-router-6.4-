@@ -1,36 +1,15 @@
-# React Router Dom V6.4 and above
+# React Router Dom V6.4 
 
-## React-router-dom 6.4 have some new changes which I include in this Project.  
-## Instead of BrowserRouter, we use createBrowserRouter and change Routes with createRoutesFromElements.
+### React-router-dom 6.4 have some new changes which I include in this Project.  
+Instead of BrowserRouter, we use createBrowserRouter and change Routes with createRoutesFromElements.
 
-## Imports we need: 
-## import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+### Imports we need: 
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 
-### Code example: 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="help" element={<Help />}>
-        <Route path="faq" element={<Faq />} />
-        <Route path="contact" element={<Contact />} />
-      </Route>
-      <Route path="*" element={<NotFound />} />
-    </Route>
-  )
-)
 
-## After creating routes, we need to place the router variable inside the return statement of our components using Router Provider.
-### Code example: 
-function App() {
-  return (
-    <div className="App">
-      <RouterProvider router={router} />
-    </div>
-
-  );
-}
+### After creating routes, we need to place the router variable inside the return statement of our components using Router Provider.
+<RouterProvider router={router} />
+    
 
 
 # Getting Started with Create React App
